@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Stallman.Hopper</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="name">Richard Stallman</string>
+    <string name="description">Richard Matthew Stallman (born March 16, 1953), often known by his initials, RMS, is an American software freedom activist and computer programmer. He campaigns for software to be distributed in a manner, such that a user receiving it, likewise receives with it the freedoms to use, study, distribute and modify that software: software that ensures these freedoms (on receipt) is termed free software. He is best known for launching the GNU Project, founding the Free Software Foundation, developing the GNU Compiler Collection and GNU Emacs, and writing the GNU General Public License. </string>
+    
+
+</resources>
