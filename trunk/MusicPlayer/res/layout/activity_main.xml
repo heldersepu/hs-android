@@ -23,7 +23,7 @@
         android:layout_alignTop="@+id/button1"
         android:layout_marginRight="41dp"
         android:onClick="stopClick"
-        android:text="Stop" />
+        android:text="@string/stop" />
 
     <Button
         android:id="@+id/button1"
@@ -34,7 +34,7 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="96dp"
         android:onClick="playClick"
-        android:text="Play" />
+        android:text="@string/play" />
 
     <EditText
         android:id="@+id/editText1"
@@ -43,7 +43,9 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="110dp"
-        android:ems="10" >
+        android:ems="10"
+        android:hint="@string/enter_url"
+        >
 
         <requestFocus />
     </EditText>
@@ -56,6 +58,6 @@
         android:layout_alignBottom="@+id/editText1"
         android:layout_toRightOf="@+id/editText1"
         android:onClick="goClick"
-        android:text="GO" />
+        android:text="@string/go" />
 
 </RelativeLayout>
