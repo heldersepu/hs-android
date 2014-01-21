@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.content.Intent; 
 import android.net.Uri; 
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.EditText;
 
 public class MainActivity extends Activity {
@@ -17,7 +18,10 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		mp = MediaPlayer.create(this, R.raw.nin_ghosts);		
+		mp = MediaPlayer.create(this, R.raw.nin_ghosts);	
+		WebView myWebView = (WebView) findViewById(R.id.webView1);
+		myWebView.loadUrl("file:///android_asset/index.html");
+		//myWebView.getSettings()
 	}
 
 	@Override
@@ -55,8 +59,15 @@ public class MainActivity extends Activity {
 		EditText mEdit   = (EditText)findViewById(R.id.editText1);
 		if (mEdit.getText().toString() != "") {
 			openWebPage( mEdit.getText().toString() );
+			openWebPage("\"");
 		}
 	}
+	
+	public void actClick(View v) {
+		Intent intent = new Intent();
+		intent.setClass(this, SecondActivity.class);
+		startActivity(intent);
+	}	
 	
 	public void openWebPage( String url) { 
 		// Once you have this working, change the string to another web page 
