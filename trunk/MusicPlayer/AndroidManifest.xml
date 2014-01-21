@@ -8,6 +8,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -15,7 +17,18 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.musicplayer.MainActivity"
-            android:label="@string/app_name" >
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.musicplayer.SecondActivity"
+            android:label="@string/title_activity_second" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
