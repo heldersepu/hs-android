@@ -4,5 +4,8 @@
     <string name="app_name">web.app</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_jabberwocky">Jabberwocky</string>
+    <string name="title_activity_uof_iat_nas">U of I at NASA</string>
+    <string name="title_activity_roundball">Roundball</string>
 
 </resources>
