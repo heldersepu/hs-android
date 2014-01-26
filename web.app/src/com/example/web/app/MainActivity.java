@@ -3,6 +3,7 @@ package com.example.web.app;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.webkit.WebView;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +11,9 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		WebView myWebView = (WebView) findViewById(R.id.webView1);
+		myWebView.loadUrl("file:///android_asset/waroftheworlds.html");
 	}
 
 	@Override
