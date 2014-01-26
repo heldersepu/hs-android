@@ -14,6 +14,9 @@ public class Roundball extends Activity {
 
 		WebView myWebView = (WebView) findViewById(R.id.webView1);
 		myWebView.getSettings().setJavaScriptEnabled(true);
+		myWebView.getSettings().setAllowFileAccess(true);
+		myWebView.getSettings().setLoadsImagesAutomatically(true);
+		
 		myWebView.loadUrl("file:///android_asset/roundball/roundball.html");
 	}
 
